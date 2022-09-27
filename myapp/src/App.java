@@ -36,11 +36,12 @@ public class App {
         l.setNpag(220);
         l.setAutor(objAutor1);
 
+        Emprestimo novoEmprestimo = new Emprestimo(l, objFunc2, objCamila);
 
         System.out.println(objMathews);
         System.out.println("\n\n\n");
         System.out.println(objFunc1);
         System.out.println("\n\n\n");
-        System.out.println();
+        System.out.println(novoEmprestimo);
     }
 }

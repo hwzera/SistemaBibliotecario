@@ -7,13 +7,19 @@ public class Emprestimo {
     private LocalDate dtEmprestimo;
     private LocalDate dtDevolucao;
 
+    private final int DIAS_EMPRESTIMO = 5;
+
     public Emprestimo(Livro _livro, Funcionario _func, Estudante _estudante){
         this.livro = _livro;
         this.func = _func;
         this.estudante = _estudante;
         this.dtEmprestimo = LocalDate.now();
+        this.dtDevolucao = this.dtEmprestimo.plusDays(DIAS_EMPRESTIMO);
     }
 
+    public void devolverLivro() {
+        this.dtDevolucao = LocalDate.now();
+    }
 
     public Livro getLivro() {
         return this.livro;

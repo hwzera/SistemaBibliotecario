@@ -46,5 +46,8 @@ public class Livro {
         this.autor = autor;
     }
 
+    public String toString() {
+        return "Autor:  "+ this.autor(autor);
+    }
 
 }
