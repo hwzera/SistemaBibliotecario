@@ -42,6 +42,9 @@ public class App {
         System.out.println("\n\n\n");
         System.out.println(objFunc1);
         System.out.println("\n\n\n");
-        System.out.println(novoEmprestimo);
+        System.out.println(novoEmprestimo); 
+
+       // Funcionario Camila = Funcionario.lerFuncionario();
+       // System.out.println(Camila.getNome());
     }
 }
