@@ -24,6 +24,6 @@ public class Estudante extends Pessoa{
     }
 
     public String toString() {
-        return "Nome: \t\t\t" + this.nome + "\nRA: \t\t\t" + this.ra + "\nCurso: \t\t\t" + this.curso + "\nData de Nascimento: \t" + this.dtNascimento;
+        return "Estudante: \t\t" + this.nome + "\nRA: \t\t\t" + this.ra + "\nCurso: \t\t\t" + this.curso + "\nData de Nascimento: \t" + this.dtNascimento;
     }
 }

@@ -46,9 +46,7 @@ public class Livro {
         this.autor = autor;
     }
 
-    @Override
-    public String toString() {
-        return "Autor:  "+ this.autor(autor);
+    public String toString(){
+        return "" + autor;
     }
-
 }

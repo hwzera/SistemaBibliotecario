@@ -4,6 +4,11 @@ public class Autor extends Pessoa{
     private int qtoLivros;
     private String area;
 
+    public Autor(String _nome, String _area){
+        this.nome = _nome;
+        this.area =_area;
+    }
+
     public int getQtoLivros() {
         return this.qtoLivros;
     }
@@ -21,10 +26,10 @@ public class Autor extends Pessoa{
     }
 
     public String toString(){
-        return "Nome: \t\t\t" + this.nome + "\nData de Nascimento: \t" + this.dtNascimento + "\nQuantidade de Livros: \t" + this.qtoLivros + "\nArea de Atuação: \t" + this.area;
+        return "Autor: \t\t\t" + this.nome + "\nQuantidade de Livros: \t" + this.qtoLivros + "\nArea de Atuação: \t" + this.area;
     }
 
-    public static Autor leAutor(){
+    public static Autor lerAutor(){
         Scanner in = new Scanner(System.in);
 
         System.out.print("Digite o nome do autor: ");
@@ -33,7 +38,7 @@ public class Autor extends Pessoa{
         System.out.print("Digite a area de atuação do autor: ");
         String area = in.nextLine();
 
-        Autor objAutor = new Autor();
+        Autor objAutor = new Autor(nome, area);
 
         return objAutor;
     }

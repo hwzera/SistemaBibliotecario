@@ -25,7 +25,7 @@ public class Funcionario extends Pessoa{
     }
 
     public String toString(){
-        return "Nome: \t\t\t" + this.nome + "\nData de Nascimento: \t" + this.dtNascimento + "\nMatricula: \t\t" + this.matricula + "\nStatus: \t\t" + isStatus();
+        return "Funcionario: \t\t" + this.nome + "\nMatricula: \t\t" + this.matricula + "\nStatus: \t\t" + isStatus();
     }
 
     public static Funcionario lerFuncionario(){

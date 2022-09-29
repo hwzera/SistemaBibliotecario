@@ -61,4 +61,8 @@ public class Emprestimo {
         this.dtDevolucao = dtDevolucao;
     }
 
+    @Override
+    public String toString(){
+        return livro + "\nData de emprestimo: \t" + this.dtEmprestimo + "\nData de devolucao: \t" + this.dtDevolucao + "\n" + estudante + "\n" + func;
+    }
 }
